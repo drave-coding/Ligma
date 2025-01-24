@@ -17,7 +17,7 @@ export function Room({ children }: { children: ReactNode }) {
     <LiveblocksProvider publicApiKey={publicApiKey}>
       <RoomProvider id="my-room">
         <ClientSideSuspense fallback={<div>Loading…</div>}>
-          {children}
+        {() => children}
         </ClientSideSuspense>
       </RoomProvider>
     </LiveblocksProvider>
