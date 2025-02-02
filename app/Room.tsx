@@ -6,6 +6,8 @@ import {
   RoomProvider,
   ClientSideSuspense,
 } from "@liveblocks/react/suspense";
+import { LiveMap } from "@liveblocks/client";
+import Loader from "@/components/Loader";
 
 export function Room({ children }: { children: ReactNode }) {
     const publicApiKey = process.env.NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY;
@@ -15,8 +17,16 @@ export function Room({ children }: { children: ReactNode }) {
   }
   return (
     <LiveblocksProvider publicApiKey={publicApiKey}>
-      <RoomProvider id="my-room">
-        <ClientSideSuspense fallback={<div>Loading…</div>}>
+      <RoomProvider id="my-room" 
+      initialPresence={{
+        cursor:null, cursorColor:null, editingText:null,
+      
+      }}
+      initialStorage={{
+        canvasObjects: new LiveMap()
+      }}
+      >
+        <ClientSideSuspense fallback={<Loader />}>
         {() => children}
         </ClientSideSuspense>
       </RoomProvider>
