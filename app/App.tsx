@@ -7,11 +7,12 @@ import RightSideBar from "@/components/RightSideBar";
 import { useEffect, useRef, useState } from "react";
 import { handleCanvaseMouseMove, handleCanvasMouseDown, handleResize, initializeFabric, handleCanvasMouseUp, renderCanvas, handleCanvasObjectModified, handleCanvasSelectionCreated, handleCanvasObjectScaling, handlePathCreated } from "@/lib/canvas";
 import { ActiveElement, Attributes } from "@/types/type";
-import LeftSideBar from "@/components/LeftSidebar";
+
 import { useMutation, useRedo, useStorage, useUndo } from "@liveblocks/react/suspense";
 import { defaultNavElement } from "@/constants";
 import { handleDelete, handleKeyDown } from "@/lib/key-events";
 import { handleImageUpload } from "@/lib/shapes";
+import LeftSidebar from "@/components/LeftSidebar";
 
 
 
@@ -224,7 +225,7 @@ export default function Page() {
         }}
       />
       <section className="flex h-full flex-row">
-      <LeftSideBar allShapes={Array.from(canvasObjects)}/>
+      <LeftSidebar allShapes={Array.from(canvasObjects)}/>
       <Live canvasRef={canvasRef} undo={undo} redo={redo} />
       <RightSideBar
         elementAttributes={elementAttributes}
