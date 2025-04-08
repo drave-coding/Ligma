@@ -48,7 +48,8 @@ Ligma is a **web application** built using **Next.js**, **React**, and **Liveblo
 4. Export your designs to PDF using the "Export" option in the right sidebar.
 
 ### Screenshots
-![Screenshot 1](https://via.placeholder.com/800x400)  
+![Ligma](https://github.com/user-attachments/assets/6156b0bd-4042-478b-a6f5-b23e91a47cfc)
+
 *Caption for screenshot 1*
 
 
@@ -116,9 +117,7 @@ This project is licensed under the [MIT License](LICENSE).
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)  
 [![Contributors](https://img.shields.io/badge/contributors-3-orange)](https://github.com/yourusername/ligma/graphs/contributors)
 
-## Optional Sections
-### Changelog
-See the [CHANGELOG.md](CHANGELOG.md) for a detailed list of changes and updates.
+
 
 ### Demo
 Check out the live demo: [Deployed URL](https://ligma-ochre.vercel.app)
