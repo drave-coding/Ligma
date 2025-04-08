@@ -50,7 +50,7 @@ Ligma is a **web application** built using **Next.js**, **React**, and **Liveblo
 ### Screenshots
 ![Ligma](https://github.com/user-attachments/assets/6156b0bd-4042-478b-a6f5-b23e91a47cfc)
 
-*Caption for screenshot 1*
+*HomeScreen*
 
 
 ## Features
